@@ -3,8 +3,7 @@
  * Plugin Updater
  */
 
-// Include the updater class
-require_once plugin_dir_path(__FILE__) . 'includes/updater/updater.php';
+
 
 // Initialize the updater
 function my_carousel_plugin_updater() {
