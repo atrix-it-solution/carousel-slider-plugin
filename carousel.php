@@ -3,7 +3,7 @@
  * Plugin Name: Carousel
  * Plugin URI: https://mysite.com/carousel-plug
  * Description: Manage carousel functionality in WordPress.
- * Version: 1.0.2
+ * Version: 1.0.1
  * Author: Webshouters
  * Author URI: https://www.mysite.com/
  * Text Domain: carousel
@@ -18,21 +18,20 @@ if (!defined('ABSPATH')) exit;
 // Define plugin constants
 define('MY_CAROUSEL_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('MY_CAROUSEL_PLUGIN_URL', plugin_dir_url(__FILE__));
-define('MY_CAROUSEL_VERSION', '1.0.2');
+define('MY_CAROUSEL_VERSION', '1.0.1');
 
 
-require_once MY_CAROUSEL_PLUGIN_DIR . 'includes/updater/updater.php';
-
+require_once MY_CAROUSEL_PLUGIN_DIR . 'includes/updater/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 function my_carousel_plugin_updater() {
-    $updater = Puc_v4_Factory::buildUpdateChecker(
+    $updater = PucFactory::buildUpdateChecker(
         'https://github.com/atrix-it-solution/carousel-slider-plugin',
         __FILE__,
         'carousel-slider-plugin'
     );
     
     $updater->setBranch('main');
-    
     $updater->getVcsApi()->enableReleaseAssets();
 }
 add_action('admin_init', 'my_carousel_plugin_updater');
