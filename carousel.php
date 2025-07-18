@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Carousel
- * Plugin URI: https://wordpress.org/plugins/https://github.com/atrix-it-solution/carousel-slider-plugin
+ * Plugin URI: https://mysite.com/carousel-plug
  * Description: Manage carousel functionality in WordPress.
  * Version: 1.0.1
  * Author: Webshouters
