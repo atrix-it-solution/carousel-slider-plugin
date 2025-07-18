@@ -1,0 +1,151 @@
+/* Required Slick Slider base styles */
+.my-slick-carousel {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.my-slick-carousel .slick-list {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.my-slick-carousel .slick-track {
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+}
+
+.my-slick-carousel .slick-slide-item {
+    float: left;
+    height: 100%;
+    min-height: 1px;
+    display: none;
+}
+
+.my-slick-carousel .slick-slide-item.slick-active {
+    display: block;
+}
+
+/* Custom styles */
+.my-carousel-wrapper {
+    position: relative;
+    margin: 20px 0;
+    padding: 0 40px;
+}
+
+.slide-inner {
+    margin: 0 15px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.slide-image {
+    width: 100%;
+    height: auto;
+}
+
+.slide-content {
+    padding: 20px;
+}
+
+.slide-title {
+    margin-top: 0;
+    color: #333;
+}
+
+.slide-text {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.slide-button {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #0073aa;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    transition: background 0.3s ease;
+}
+
+.slide-button:hover {
+    background: #005177;
+}
+
+
+
+
+/* Confirmation Dialog Styles */
+.carousel-confirm-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.carousel-confirm-dialog {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+    width: 300px;
+    animation: fadeIn 0.2s ease;
+}
+
+.carousel-confirm-dialog p {
+    margin: 0 0 15px;
+    font-size: 14px;
+    color: #444;
+}
+
+.carousel-confirm-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.carousel-confirm-buttons .button {
+    padding: 5px 12px;
+    font-size: 13px;
+}
+
+.confirm-remove {
+    background: #d63638;
+    border-color: #d63638;
+    color: white;
+}
+
+.confirm-remove:hover {
+    background: #b32d2e;
+    border-color: #b32d2e;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -55%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}

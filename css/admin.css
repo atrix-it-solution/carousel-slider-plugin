@@ -1,0 +1,68 @@
+/* Carousel Slides Table */
+.carousel-slides-container table {
+    border-collapse: collapse;
+    margin-top: 15px;
+    width: 100%;
+}
+
+
+
+
+.carousel-slides-container th {
+    text-align: left;
+    padding: 8px;
+    background: #f5f5f5;
+    border-bottom: 1px solid #ddd;
+}
+
+.carousel-slides-container td {
+    padding: 8px;
+    vertical-align: top;
+    border-bottom: 1px solid #eee;
+}
+
+.carousel-slides-container tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+.carousel-slides-container .slide-handle {
+    cursor: move;
+    margin-right: 5px;
+    height: 100%;
+
+}
+
+.carousel-slides-container .image-preview {
+    margin-bottom: 5px;
+    min-height: 60px;
+}
+
+.carousel-slides-container .image-preview img {
+    width: 100px;
+    height: auto;
+}
+
+.carousel-slides-container .image-preview span {
+    color: #999;
+    font-style: italic;
+    height: 100%;
+}
+
+.carousel-slides-container textarea {
+    height: 60px;
+    min-width: 150px;
+}
+
+.carousel-slides-container input[type="text"],
+.carousel-slides-container input[type="url"],
+.carousel-slides-container textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+.carousel-slides-container .add-slide {
+    margin-top: 10px;
+}
+
+
