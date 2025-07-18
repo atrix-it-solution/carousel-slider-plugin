@@ -21,7 +21,7 @@ define('MY_CAROUSEL_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('MY_CAROUSEL_VERSION', '1.0.3');
 
 
-require_once MY_CAROUSEL_PLUGIN_DIR . 'includes/updater/plugin-update-checker.php';
+require_once MY_CAROUSEL_PLUGIN_DIR . 'includes/updater/updater.php';
 
 
 function my_carousel_plugin_updater() {
