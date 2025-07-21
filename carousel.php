@@ -21,7 +21,15 @@ define('MY_CAROUSEL_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('MY_CAROUSEL_VERSION', '1.0.1');
 
 
-
+require 'plugin-update-checker-master/plugin-update-checker.php';
+// Initialize the update checker
+$my_carousel_update_checker = Puc_v4_Factory::buildUpdateChecker(
+    'https://github.com/atrix-it-solution/carousel-slider-plugin',
+    __FILE__,
+    'carousel-slider-plugin'
+);
+$my_carousel_update_checker->setAuthentication('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');
+$my_carousel_update_checker->setBranch('main');
 
 
 // Include required files
