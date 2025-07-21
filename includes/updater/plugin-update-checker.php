@@ -6,8 +6,8 @@ $myUpdateChecker = Puc_v5p1_Factory::buildUpdateChecker(
     __FILE__,
     'carousel-slider-plugin'
 );
-$myUpdateChecker->setBranch('main');
+// $myUpdateChecker->setBranch('main');
 
-$myUpdateChecker->setAuthentication('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'); // Optional GitHub token if private repo
+// $myUpdateChecker->setAuthentication('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'); // Optional GitHub token if private repo
 
-$myUpdateChecker->getVcsApi()->enableReleaseAssets(); // Use ZIP from GitHub Releases
+// $myUpdateChecker->getVcsApi()->enableReleaseAssets(); // Use ZIP from GitHub Releases
