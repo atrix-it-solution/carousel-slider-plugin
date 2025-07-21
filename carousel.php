@@ -23,7 +23,7 @@ define('MY_CAROUSEL_VERSION', '1.0.2');
 
 // Load the update checker with error handling
 try {
-    $pucPath = MY_CAROUSEL_PLUGIN_DIR . 'plugin-update-checker/plugin-update-checker.php';
+    $pucPath = MY_CAROUSEL_PLUGIN_DIR . 'plugin-update-checker-master/plugin-update-checker.php';
     if (!file_exists($pucPath)) {
         throw new Exception('Plugin Update Checker not found at: ' . $pucPath);
     }
