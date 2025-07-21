@@ -8,6 +8,6 @@ $myUpdateChecker = Puc_v5p1_Factory::buildUpdateChecker(
 );
 $myUpdateChecker->setBranch('main');
 
-// $myUpdateChecker->setAuthentication('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'); // Optional GitHub token if private repo
+$myUpdateChecker->setAuthentication('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'); // Optional GitHub token if private repo
 
 $myUpdateChecker->getVcsApi()->enableReleaseAssets(); // Use ZIP from GitHub Releases
