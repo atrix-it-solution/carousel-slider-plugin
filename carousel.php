@@ -30,7 +30,7 @@ try {
     
     require_once $pucPath;
     
-    if (!class_exists('YahnisElsts\PluginUpdateChecker\v4p11\PucFactory')) {
+    if (!class_exists('YahnisElsts\PluginUpdateChecker\v4\PucFactory')) {
         throw new Exception('PucFactory class not found. Check plugin-update-checker version.');
     }
 } catch (Exception $e) {
@@ -43,7 +43,7 @@ try {
 // Initialize the update checker
 add_action('plugins_loaded', function() {
     try {
-        $myUpdateChecker = YahnisElsts\PluginUpdateChecker\v4p11\PucFactory::buildUpdateChecker(
+        $myUpdateChecker = YahnisElsts\PluginUpdateChecker\v4\PucFactory::buildUpdateChecker(
             'https://github.com/atrix-it-solution/carousel-slider-plugin',
             __FILE__,
             'carousel-slider-plugin'
