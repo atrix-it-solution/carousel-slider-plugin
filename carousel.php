@@ -30,7 +30,7 @@ try {
     
     require_once $pucPath;
     
-    if (!class_exists('YahnisElsts\PluginUpdateChecker\v5\PucFactory')) {
+    if (!class_exists('YahnisElsts\PluginUpdateChecker\v4p11\PucFactory')) {
         throw new Exception('PucFactory class not found. Check plugin-update-checker version.');
     }
 } catch (Exception $e) {
@@ -43,7 +43,7 @@ try {
 // Initialize the update checker
 add_action('plugins_loaded', function() {
     try {
-        $myUpdateChecker = YahnisElsts\PluginUpdateChecker\v5\PucFactory::buildUpdateChecker(
+        $myUpdateChecker = YahnisElsts\PluginUpdateChecker\v4p11\PucFactory::buildUpdateChecker(
             'https://github.com/atrix-it-solution/carousel-slider-plugin',
             __FILE__,
             'carousel-slider-plugin'
@@ -52,7 +52,7 @@ add_action('plugins_loaded', function() {
         $myUpdateChecker->setBranch('main');
         
         // Only set authentication if needed (remove comment if required)
-        // $myUpdateChecker->setAuthentication('your-token-here');
+        $myUpdateChecker->setAuthentication('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');
         
     } catch (Exception $e) {
         add_action('admin_notices', function() use ($e) {
