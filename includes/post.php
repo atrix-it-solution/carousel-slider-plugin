@@ -7,7 +7,7 @@ function carousel_create_post_type() {
         'menu_name'             => __('Carousel', 'Carousel'),
         'name'                  => _x('Carousel', 'Post Type General Name', 'carousel'),
         'singular_name'         => _x('Carousel', 'Post Type Singular Name', 'carousel'),
-        'menu_name'             => __('Carousel', 'carousel'),
+        'menu_name'             => __('Carouselss', 'carousel'),
         'all_items'             => __('All Carousel', 'carousel'),
         'add_new_item'          => __('Add New Carousel', 'carousel'),
         'add_new'               => __('Add New', 'carousel'),
