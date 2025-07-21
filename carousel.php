@@ -22,20 +22,20 @@ define('MY_CAROUSEL_VERSION', '1.0.1');
 
 
 require_once MY_CAROUSEL_PLUGIN_DIR . 'plugin-update-checker/plugin-update-checker.php';
-use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+// use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
-function my_carousel_plugin_updater() {
-    $updater = PucFactory::buildUpdateChecker(
+
+    $updater = Puc_v4_Factory::buildUpdateChecker(
         'https://github.com/atrix-it-solution/carousel-slider-plugin',
         __FILE__,
         'carousel-slider-plugin'
     );
+    $updater->setAuthentication('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'); 
     
     $updater->setBranch('main');
-    $updater->setAuthentication('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'); 
     // $updater->getVcsApi()->enableReleaseAssets();
-}
-add_action('admin_init', 'my_carousel_plugin_updater');
+
+
 
 
 
