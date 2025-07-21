@@ -21,20 +21,20 @@ define('MY_CAROUSEL_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('MY_CAROUSEL_VERSION', '1.0.1');
 
 
-require_once MY_CAROUSEL_PLUGIN_DIR . 'includes/updater/plugin-update-checker.php';
-use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+// require_once MY_CAROUSEL_PLUGIN_DIR . 'includes/updater/plugin-update-checker.php';
+// use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
-function my_carousel_plugin_updater() {
-    $updater = PucFactory::buildUpdateChecker(
-        'https://github.com/atrix-it-solution/carousel-slider-plugin',
-        __FILE__,
-        'carousel-slider-plugin'
-    );
+// function my_carousel_plugin_updater() {
+//     $updater = PucFactory::buildUpdateChecker(
+//         'https://github.com/atrix-it-solution/carousel-slider-plugin',
+//         __FILE__,
+//         'carousel-slider-plugin'
+//     );
     
-    $updater->setBranch('main');
-    $updater->getVcsApi()->enableReleaseAssets();
-}
-add_action('admin_init', 'my_carousel_plugin_updater');
+//     $updater->setBranch('main');
+//     $updater->getVcsApi()->enableReleaseAssets();
+// }
+// add_action('admin_init', 'my_carousel_plugin_updater');
 
 
 
@@ -42,6 +42,7 @@ add_action('admin_init', 'my_carousel_plugin_updater');
 require_once MY_CAROUSEL_PLUGIN_DIR . 'includes/shortcodes.php';
 require_once MY_CAROUSEL_PLUGIN_DIR . 'includes/settings.php';
 require_once MY_CAROUSEL_PLUGIN_DIR . 'includes/post.php';
+require_once MY_CAROUSEL_PLUGIN_DIR . 'includes/update.php';
 
 
 
