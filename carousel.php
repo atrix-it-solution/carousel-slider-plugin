@@ -21,7 +21,7 @@ define('MY_CAROUSEL_PLUGIN_URL', plugin_dir_url(__FILE__));
 define('MY_CAROUSEL_VERSION', '1.0.1');
 
 
-require 'plugin-update-checker-master/plugin-update-checker.php';
+require 'plugin-update-checker/plugin-update-checker.php';
 // Initialize the update checker
 $my_carousel_update_checker = Puc_v5_Factory::buildUpdateChecker(
     'https://github.com/atrix-it-solution/carousel-slider-plugin',
