@@ -28,7 +28,7 @@ $my_carousel_update_checker = Puc_v5_Factory::buildUpdateChecker(
     __FILE__,
     'carousel-slider-plugin'
 );
-$my_carousel_update_checker->setAuthentication('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');
+// $my_carousel_update_checker->setAuthentication('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');
 $my_carousel_update_checker->setBranch('main');
 
 
