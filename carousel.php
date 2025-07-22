@@ -3,7 +3,7 @@
  * Plugin Name: Carousel
  * Plugin URI: https://mysite.com/carousel-plug
  * Description: Manage carousel functionality in WordPress.
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Webshouters
  * Author URI: https://www.mysite.com/
  * Text Domain: carousel
@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) exit;
 // Define plugin constants
 define('MY_CAROUSEL_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('MY_CAROUSEL_PLUGIN_URL', plugin_dir_url(__FILE__));
-define('MY_CAROUSEL_VERSION', '1.0.4');
+define('MY_CAROUSEL_VERSION', '1.0.5');
 
 // Load the update checker with error handling
 // Replace the existing PUC loading code with this:
